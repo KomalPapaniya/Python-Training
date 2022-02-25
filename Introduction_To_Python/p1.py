@@ -5,9 +5,9 @@ def Unique():
     # print(sequence)
     for number in sequence:
         if sequence.count(number) > 1:
-            print("All numbers are NOT UNIQUE")
+            print("NOT UNIQUE")
             break
     else:
-        print("All numbers are UNIQUE")
+        print("UNIQUE")
 
 Unique()
