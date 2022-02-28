@@ -55,3 +55,109 @@
 | ----- | ----- |
 | [1,0,2,2,0,1,0,1,2,0,0] | [0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2]  |
 #
+
+ 
+## P6 - Create a function to reverse the entire list without any function and also do not use any indexing or slicing shortcut. Time Complexity O(logn)
+<br>
+ 
+**Input:** List of integers<br>
+**Output:** Reversed list.
+ 
+| Input | Output |
+| ----- | ----- |
+| [3, 6, 9, 1, 12, 7, 21] | [21, 7, 12, 1, 9, 6, 3] |
+#
+ 
+## P7 - Convert any lower case string to upper case without in-built python functions.
+<br>
+ 
+**Input:** Lower case string<br>
+**Output:** Upper case string
+ 
+| Input | Output |
+| ----- | ----- |
+| 'komal papaniya' | 'KOMAL PAPANIYA' |
+#
+ 
+## P8 - Return the sum of duplicates elements from the given List
+<br>
+ 
+**Input:** List of integers<br>
+**Output:** Sum of duplicates in the list
+ 
+| Input | Output |
+| ----- | ----- |
+| [3, 5, 6, 11, 12, 3, 5, 5, 4, 4, 4] | 12 (3+5+4) |
+#
+ 
+## P9 - Count the subsequence in the given string.
+<br>
+ 
+**Input:** String and subsequence string<br>
+**Output:** Total subsequence in the given string
+ 
+| Input | Output |
+| ----- | ----- |
+| "BCAHGBNAJKGTYUALKWG" <br>"AG"  | 6 |
+#
+## P10 - Find the max sum of sub array
+<br>
+ 
+**Input:** List of integers<br>
+**Output:** Max sum of sub array
+ 
+| Input | Output |
+| ----- | ----- |
+| [5, 4, 7, -2, 5, 0, 6, 9, 15, -3] | 49 |
+#
+ 
+## P11 -Return product of minimum of odd and maximum of even from a given list.
+<br>
+ 
+**Input:** List of numbers<br>
+**Output:** Product of largest even and smallest odd integer from the list
+ 
+| Input | Output |
+| ----- | ----- |
+| [7, 5,  2, 3, 12, 9, 15, 24] | 72 |
+#
+ 
+## P12 - Create a simulation program for Hot Potato Game.
+### You can develop with your ideas. Just take care of the following things:
+### - At least one person must remove from each round.
+### - Display name in the console that which user has a hot potato.
+### - Each user holds a potato for random seconds between 0.1 to 3.0
+### - Each round starts after 3 seconds of the previous elimination.
+### - Each round stops at random seconds between 5 to 20.
+### - Display the name of the winner.
+<br>
+ 
+**Input:** List containing name of players<br>
+**Output:** Name of players who are out of the game in each round and lastly, the winner.
+ 
+| Input | Output |
+| ----- | ----- |
+| ['Komal', 'Vishruti', 'Aksh', 'Kshitij', 'Prachi', 'Praveen'] | Vishruti wins the game 😎🥳🎉 |
+#
+ 
+## P13 - Return the array which contains the elements which are greater than from its right side
+<br>
+ 
+**Input:** List of integers<br>
+**Output:** List of integers which are greater than all the elements present on their right.
+ 
+| Input | Output |
+| ----- | ----- |
+| [9, 15, 1, 7, 10, 6, 8, 4] | [15, 10, 8, 4] |
+#
+ 
+## P14 - Add 1 to given list elements. Do not use string conversion.
+<br>
+ 
+**Input:** List of integers<br>
+**Output:** List of integers after adding 1 to the input list
+ 
+| Input | Output |
+| ----- | ----- |
+| [3, 5, 9, 9] | [3, 6, 0, 0] |
+#
