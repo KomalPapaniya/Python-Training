@@ -161,3 +161,64 @@
 | ----- | ----- |
 | [3, 5, 9, 9] | [3, 6, 0, 0] |
 #
+
+## P15 - Calculate the sum of the major and minor diagonals of the given matrix.
+<br>
+ 
+**Input:** A matrix of integers.<br>
+**Output:** Sum of major and minor diagonals of given matrix.
+ 
+| Input | Output |
+| ----- | ----- |
+| [[2,0,7,-3],<br>[4,1,9,6],<br>[8,1,-1,0],<br>[2,21,0,-8]] | Sum of major diagonal = -6 <br> Sum of minor diagonal = 9 |
+#
+
+
+## P16 - Find the elements of the given list which are exactly the same as the entire product of the list except itself.
+<br>
+ 
+**Input:** A list of integers.<br>
+**Output:** Elements of the given list which are exactly the same as the entire product of the list except itself.
+ 
+| Input | Output |
+| ----- | ----- |
+| [1, 5, 1, 10, 50] | [50] |
+| [1, 2, 2, 1, 1] | [2, 2] |
+| [1, 2, 4, 8, 1] | [8] |
+#
+
+## P17 - Print reverse string using recursion.
+<br>
+ 
+**Input:** String of characters<br>
+**Output:** Reverse of the input string
+ 
+| Input | Output |
+| ----- | ----- |
+| "Komal Papaniya" | "ayinapaP lamoK" |
+#
+
+## P18 - Find the majority element of the given list.
+## Majority element = Whose number of count > N/2
+## N = length of list.
+<br>
+ 
+**Input:** List of integers<br>
+**Output:** Majority element
+ 
+| Input | Output |
+| ----- | ----- |
+| [5, 2, 3, 5, 1, 5, 1, 2, 5, 5, 5] | 5 |
+#
+
+## P19 - Find the overlapping area of two rectangles. Rectangles can be in any direction.
+<br>
+ 
+**Input:** Co-ordinates of both rectangles<br>
+**Output:** Overlapping area of both rectangles
+ 
+| Input | Output |
+| ----- | ----- |
+| [2, 2]<br>[6, 6]<br>[4, 4]<br>[8, 8] | Overlapping Area = 4 squared units |
+| [1, 1]<br>[4, 5]<br>[3, 2]<br>[6, 4] | Overlapping Area = 2 squared units |
+#
