@@ -221,4 +221,6 @@
 | ----- | ----- |
 | [2, 2]<br>[6, 6]<br>[4, 4]<br>[8, 8] | Overlapping Area = 4 squared units |
 | [1, 1]<br>[4, 5]<br>[3, 2]<br>[6, 4] | Overlapping Area = 2 squared units |
+| [0, 0]<br>[2, 2]<br>[1.5, 2]<br>[2, 1] | Overlapping Area = 0.5 squared units |
+| [-3, 2]<br>[1, -3]<br>[3, -2]<br>[-4, -7] | Overlapping Area = 4 squared units |
 #

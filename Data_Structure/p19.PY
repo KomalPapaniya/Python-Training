@@ -1,46 +1,40 @@
-# AB = [2, 1]
-# CD = [4, 3]
-# EF = [3, 2]
-# GH = [6, 7]
+ab = [-3, 2]
+cd = [1, -3]
+ef = [3, -2]
+gh = [-4, -7]
+
+AB = []
+CD = []
+EF = []
+GH = []
+
+AB.append(min(ab[0], cd[0]))
+AB.append(min(ab[1], cd[1]))
+# print(AB)
+
+CD.append(max(ab[0], cd[0]))
+CD.append(max(ab[1], cd[1]))
+# print(CD)
+
+EF.append(min(ef[0], gh[0]))
+EF.append(min(ef[1], gh[1]))
+# print(EF)
+
+GH.append(max(ef[0], gh[0]))
+GH.append(max(ef[1], gh[1]))
+# print(GH)
  
-# def Overlap(AB , CD, EF, GH):
-#     x = 0
-#     y = 1
-#     x_dist = (min(CD[x], GH[x]) - max(AB[x], EF[x]))
-#     y_dist = (min(CD[y], GH[y]) - max(AB[y], EF[y]))
+def Overlap(AB , CD, EF, GH):
+    x = 0
+    y = 1
+    x_dist = (min(CD[x], GH[x]) - max(AB[x], EF[x]))
+    y_dist = (min(CD[y], GH[y]) - max(AB[y], EF[y]))
 
-#     area = 0
-#     if x_dist > 0 and y_dist > 0:
-#         area = x_dist * y_dist
+    area = 0
+    if x_dist > 0 and y_dist > 0:
+        area = x_dist * y_dist
  
-#     return(area)
+    return(area)
  
-# print("Overlapping Area = {} squared units".format(Overlap(AB, CD, EF, GH)))
+print("Overlapping Area = {} squared units".format(Overlap(AB, CD, EF, GH)))
  
-
-
-AB_CD = [[4, 3], [2, 1]]
-AB_CD.sort()
-# print(AB_CD)
-# AB_CD = [[2, 1], [4, 3]]
-
-EF_GH = [[6, 7], [3, 2]]
-EF_GH.sort()
-# print(EF_GH)
-# EF_GH = [[3, 2], [6, 7]]
-
-x = 0
-y = 1
-if EF_GH[0][x] in range(AB_CD[0][x], AB_CD[1][x]) and EF_GH[1][x] in range(AB_CD[0][x], AB_CD[1][x]):
-    length = EF_GH[1][x] - EF_GH[0][x]
-    print("both")
-elif EF_GH[0][x] in range(AB_CD[0][x], AB_CD[1][x]):
-    length = AB_CD[1][x] - EF_GH[0][x]
-    print("left")
-elif EF_GH[1][x] in range(AB_CD[0][x], AB_CD[1][x]):
-    length = EF_GH[1][x] - AB_CD[0][x]
-    print("right")
-else:
-    length = 0
-    print('last')
-print(length)
