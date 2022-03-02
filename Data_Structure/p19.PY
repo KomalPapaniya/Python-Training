@@ -1,7 +1,7 @@
-ab = [-3, 2]
-cd = [1, -3]
-ef = [3, -2]
-gh = [-4, -7]
+gh = [-3, 2]
+ef = [1, -3]
+ab = [3, -2]
+cd = [-4, -7]
 
 AB = []
 CD = []
@@ -10,19 +10,19 @@ GH = []
 
 AB.append(min(ab[0], cd[0]))
 AB.append(min(ab[1], cd[1]))
-# print(AB)
+print(AB)
 
 CD.append(max(ab[0], cd[0]))
 CD.append(max(ab[1], cd[1]))
-# print(CD)
+print(CD)
 
 EF.append(min(ef[0], gh[0]))
 EF.append(min(ef[1], gh[1]))
-# print(EF)
+print(EF)
 
 GH.append(max(ef[0], gh[0]))
 GH.append(max(ef[1], gh[1]))
-# print(GH)
+print(GH)
  
 def Overlap(AB , CD, EF, GH):
     x = 0
