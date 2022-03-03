@@ -59,4 +59,5 @@ class Fox(Canine):
 
 # print(Animal.get_name('leo'))
 animal = Tiger("Leo")
+print(animal.get_the_name())
 print(animal.get_the_info())
