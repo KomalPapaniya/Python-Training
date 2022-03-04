@@ -1,0 +1,10 @@
+1. What is your name?
+Bob
+2. Where are you from?
+India
+3. What is your Hobby?
+Swimming
+4. What is your favourite food?
+Noodles
+5. Where do you work?
+Tech Company
