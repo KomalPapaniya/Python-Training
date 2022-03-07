@@ -1,0 +1,35 @@
+Komal Papaniya
+21/09/2000
+Rajkot
+67895467
+01/01/2022
+4000
+AI/ML
+Trainee
+
+Vishruti Faldu
+04/02/2001
+Jamnagar
+893578945
+01/01/2021
+8000
+AR/VR
+Trainee
+
+Aksh
+21/03/1999
+Pune
+896789567
+16/02/2022
+5000
+AI
+Engineer
+
+Kshitij Antani
+14/11/2000
+Rajkot
+947587651
+15/03/2022
+6500
+Python
+Developer
