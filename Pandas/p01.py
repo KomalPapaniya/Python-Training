@@ -5,47 +5,47 @@ import numpy as np
 data = pd.read_csv("Automobile_data.csv")
 
 # printing data of first 5 rows
-# print(data.head())
+print(data.head())
 
 # printing data of last 5 rows
-# print(data.tail())
+print(data.tail())
 
 # ----------------------------------------------------------------------------------------------------------
 
 # data cleaning: replacing all '?' with NaN
-# data = data.replace('?', np.NaN)
-# print(data)
+data = data.replace('?', np.NaN)
+print(data)
 
 # ----------------------------------------------------------------------------------------------------------
 
 # updating the csv file
-# data.to_csv("Automobile_data.csv", index=False)
+data.to_csv("Automobile_data.csv", index=False)
 
 # ----------------------------------------------------------------------------------------------------------
 
-# print(data.info())
+print(data.info())
 
 # Find the most expensive car company name
-# most_exp_car = data.loc[data['price'].idxmax(), 'make']
-# print(most_exp_car)
+most_exp_car = data.loc[data['price'].idxmax(), 'make']
+print(most_exp_car)
 
 # ----------------------------------------------------------------------------------------------------------
 
 # Print All Toyota Cars details
-# toyota = data[data['make']=='toyota']
-# print(toyota)
+toyota = data[data['make']=='toyota']
+print(toyota)
 
 # ----------------------------------------------------------------------------------------------------------
 
 # Count total car per company
-# company_wise_total_cars = data.groupby('make').size()
-# print(company_wise_total_cars)
+company_wise_total_cars = data.groupby('make').size()
+print(company_wise_total_cars)
 
 # ----------------------------------------------------------------------------------------------------------
 
 # Find each company’s Highest price car
-# highest_priced_cars = data.groupby('make')['price'].max()
-# print(highest_priced_cars)
+highest_priced_cars = data.groupby('make')['price'].max()
+print(highest_priced_cars)
 
 # ----------------------------------------------------------------------------------------------------------
 
@@ -71,5 +71,5 @@ print(avg)
 # ----------------------------------------------------------------------------------------------------------
 
 # Sort all cars by Price column
-# sorted_by_price = data.sort_values(by=("price"))
-# print(sorted_by_price)
+sorted_by_price = data.sort_values(by=("price"))
+print(sorted_by_price)
