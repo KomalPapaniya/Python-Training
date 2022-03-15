@@ -22,7 +22,7 @@ User input is assumed to be a formula that consists of a number, an operator (at
 #
 
  
-## P1- Create while loop which increase counter by one every second.
+## P2- Create while loop which increase counter by one every second.
 -> Start count from 0 <br>
 -> Stop while loop when counter is grater than 500<br>
 -> Program must not stop on any keyboard press. (Not even ctrl + c or ctrl + x)
