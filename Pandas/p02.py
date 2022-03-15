@@ -13,17 +13,19 @@ print(ufo_data.head())
 
 print(ufo_data.info())
 
-# changing 'date_documented' column datatype from object to datetime64
-ufo_data['date_documented'] = pd.to_datetime(ufo_data['date_documented'])
+# changing 'Date_time' column datatype from object to datetime64
+ufo_data['Date_time'] = ufo_data['Date_time'].str.replace('24.00', '00:00')
+
+ufo_data['Date_time'] = pd.to_datetime(ufo_data['Date_time'])
 print(ufo_data.info())
-print(ufo_data.head())
+# print(ufo_data.head())
 
 # getting date from user
 dt = input('Enter date in YYYY-MM-DD format: ')
 
 # finding data of sighting days of the unidentified flying object (ufo) from the given date
-condition = (ufo_data['date_documented'] > dt)
+condition = (ufo_data['Date_time'] > dt)
 print(ufo_data.loc[condition])
 
 # calculating all the sighting days of the unidentified flying object (ufo) from the given date
-print(len(ufo_data.loc[condition]))
+print("ufo appeared",len(ufo_data.loc[condition]), 'times after', dt)
