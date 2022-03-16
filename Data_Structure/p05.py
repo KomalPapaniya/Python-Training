@@ -1,3 +1,7 @@
+# Sort given array of three random elements. 0,1 & 2. Without any sorting algorithm. Time complexity: O(n)
+# Sample: [1,0,2,2,0,1,0,1,2,0,0]
+# Output: [0,0,0,0,0,1,1,1,2,2,2]
+
 List = [1,0,2,2,0,1,0,1,2,0,0]
 zero = []
 one = []

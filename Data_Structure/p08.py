@@ -1,13 +1,18 @@
+#  Return the sum of duplicates elements from the given List
+# 			Ex. L = [3, 5, 6, 11, 12, 3, 5]
+# 			Output = 8 (3+5)
+
 List = [3, 5, 6, 11, 12, 3, 5, 5, 4, 4, 4]
 duplicates = []
-for i in List:
-    if List.count(i) > 1 and i not in duplicates:
-        duplicates.append(i)
+for element in List:
+    if List.count(element) > 1 and element not in duplicates:
+        duplicates.append(element)
+        # print(duplicates)
  
-s = ""  # to print the duplicates in tuple format...
-for i in duplicates:  
-    if duplicates.index(i) != len(duplicates) - 1:
-        s += str(i)+"+"
-s += str(duplicates[len(duplicates)-1])
+tuple_str = ""  # to print the duplicates in tuple format...
+for element in duplicates:  
+    if duplicates.index(element) != len(duplicates) - 1:
+        tuple_str += str(element) + "+"
+tuple_str += str(duplicates[len(duplicates)-1])
  
-print(sum(duplicates),"("+s+")")
+print(sum(duplicates),"("+ tuple_str +")")

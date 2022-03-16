@@ -1,8 +1,17 @@
+# Create a simulation program for Hot Potato Game.
+# You can develop with your ideas. Just take care of the following things:
+# - At least one person must remove from each round.
+# - Display name in the console that which user has a hot potato.
+# - Each user holds a potato for random seconds between 0.1 to 3.0
+# - Each round starts after 3 seconds of the previous elimination.
+# - Each round stops at random seconds between 5 to 20.
+# - Display the name of the winner.
+
 import time, random
 players = ['Komal', 'Vishruti', 'Aksh', 'Kshitij', 'Prachi', 'Praveen']
 players_left = len(players)
 total_time = 0
-r = 1
+round = 1
 time.sleep(1)
 print("-----------------------------------------------------------------------------------------")
 print("                                HOT POTATO GAME!!!")
@@ -21,7 +30,7 @@ time.sleep(1)
 # time.sleep(3)
  
 while players_left > 1:
-    print('---------------------------ROUND {}------------------------------'.format(r))
+    print('---------------------------ROUND {}------------------------------'.format(round))
     time.sleep(1)
     player = 0
     round_duration = random.uniform(5, 20)
@@ -41,7 +50,7 @@ while players_left > 1:
  
     total_time = 0
     players_left -= 1
-    r += 1
+    round += 1
     time.sleep(3)
  
 print("----------------------{} wins the game 😎🥳🎉-------------------------\n".format(players[0]))

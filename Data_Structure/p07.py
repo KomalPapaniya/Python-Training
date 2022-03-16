@@ -1,6 +1,10 @@
+# Convert any lower case string to upper case without in-built python functions.
+# 			Ex. A = “abcdef ghi”
+# 			Output: “ABCDEF GHI
+
 string = "hello, komal papaniya here...!"
-for i in string:
-    if ord(i) - 32 in range(65, 91):
-        print(chr(ord(i)-32), end = "")
+for char in string:
+    if ord(char) - 32 in range(65, 91):
+        print(chr(ord(char)-32), end = "")
     else:
-        print(i, end = "")
+        print(char, end = "")
