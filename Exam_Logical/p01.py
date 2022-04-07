@@ -12,9 +12,16 @@ num = int(input("Enter any number: "))
 
 # -------------OR------------------------------
 
-sum = 0
-for i in str(num):
-    sum += int(i)
-    if sum > 9:
-        sum -= 9
-print(sum)
+# sum = 0
+# for i in str(num):
+#     sum += int(i)
+#     if sum > 9:
+#         sum -= 9
+# print(sum)
+
+# -------------------OR-----------------------
+
+if num % 9 == 0:
+    print(num%9+9)
+else:
+    print(num%9)
