@@ -4,8 +4,12 @@
 # Area = 172
 
 P1 = [(-10, 30), (10, 20), (15, 10), (-20, 10)]
-
 P2 = [(-20, 25), (15, 25), (15, 15), (-20, 20)]
+# P1 = [(-30, 25), (-10, 10), (25, 20)]
+# P2 = [(-20, 25), (5, 25), (4, 19), (-25, 5)]
+# P1 = [(-20, 5), (15, 20), (15, -10), (-20, -10)]
+# P2 = [(-20, 0), (5, 0), (5, -20), (-20, -20)]
+
 
 INT_MAX = 10000
 INT_MIN = -10000
@@ -205,20 +209,23 @@ for pt in P1:
         if pt not in points:
             points.append(pt)
 
-print('points: ', points)
+
+print('\nPoints of overlapped Polygon:\n', points)
+
 
 # Arranging points to form polygon
-# points = [(0.0, 25.0), (12.307692307692308, 15.384615384615385), (-12.5, 25.0), (-15.333333333333334, 19.333333333333332), (10, 20)]
 
 l = len(points)
 p = points[0]
 for pt in points:
-    if pt[0] == p[0] and pt[1] < p[1]:
+    if pt[0] < p[0]:
+        p = pt
+    elif pt[0] == p[0] and pt[1] < p[1]:
         pr = points.pop(points.index(p))
         p = pt 
-        
-    elif pt[0] < p[0]:
-        p = pt
+    elif pt[0] == p[0] and pt[1] > p[1]:
+        pr = points.pop(points.index(pt))
+
 # print(p)           
 points.remove(p)
 # print(points)
@@ -232,7 +239,8 @@ sequence = ([x for _, x in sorted(zip(slope, points))])
 sequence.insert(0, p)
 if len(sequence) != l:
     sequence.append(pr)
-print("New Sequence of points: ", sequence)
+print('\nPoints after arranging in sequence:\n', sequence)
+
 
 # Finding area of polygon
 sum = 0
@@ -243,4 +251,4 @@ for i, p in enumerate(sequence):
         sum += (sequence[i][0]*sequence[i+1][1] - sequence[i+1][0]*sequence[i][1])
         
 area = sum/2
-print('Area = {} squared units'.format(area))
+print('\nArea of overlapped Polygon = {} squared units\n'.format(area))
