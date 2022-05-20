@@ -8,32 +8,32 @@ B = cv2.imread(r'C:\Users\wot-komal\Desktop\Komal_Training\Python_Training\OpenC
 B = cv2.resize(B, (512, 512))
 
 rows, cols, ch = A.shape
-cv2.imshow('Apple', A)
-cv2.imshow('Orange', B)
+# cv2.imshow('Apple', A)
+# cv2.imshow('Orange', B)
 
 # generate Gaussian pyramid for A
 G = A.copy()
 gpA = [G]
-for i in range(6):
+for i in range(5):
     G = cv2.pyrDown(G)
     gpA.append(G)
 
 # generate Gaussian pyramid for B
 G = B.copy()
 gpB = [G]
-for i in range(6):
+for i in range(5):
     G = cv2.pyrDown(G)
     gpB.append(G)
 
 # generate Laplacian Pyramid for A
-lpA = [gpA[5]]
+lpA = [gpA[-1]]
 for i in range(5,0,-1):
     GE = cv2.pyrUp(gpA[i])
     L = cv2.subtract(gpA[i-1],GE)
     lpA.append(L)
 
 # generate Laplacian Pyramid for B
-lpB = [gpB[5]]
+lpB = [gpB[-1]]
 for i in range(5,0,-1):
     GE = cv2.pyrUp(gpB[i])
     L = cv2.subtract(gpB[i-1],GE)
@@ -54,9 +54,6 @@ for i in range(1,6):
 
 # image with direct connecting each half
 real = np.hstack((A[:,:cols//2],B[:,cols//2:]))
-
-cv2.imwrite('Pyramid_blending2.jpg',ls_)
-cv2.imwrite('Direct_blending.jpg',real)
 
 cv2.imshow('blended', ls_)
 cv2.imshow('real', real)
